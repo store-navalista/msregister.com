@@ -1,0 +1,88 @@
+.footer {
+    position: absolute;
+    box-sizing: border-box;
+    right: 30px;
+    top: 230px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    padding: 5px 3px;
+    border: 1px solid #ffffff;
+    transition: box-shadow .3s ease-out;
+    box-shadow: 0 0 4px 4px rgba(237, 237, 237, 0.2);
+}
+
+.footer:hover {
+    box-shadow: 0 0 4px 4px rgba(237, 237, 237, 0.7);
+}
+
+.footer:hover svg {
+    border-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.link {
+    position: relative;
+    border-radius: 60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+}
+
+.link:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    background-color: #363636;
+    font-size: 12px;
+    padding: 7px 12px 6px;
+    border-radius: 20px;
+    text-align: right;
+    color: white;
+    top: 3px;
+    right: 43px;
+    box-shadow: 0 0 2px 1px rgba(237, 237, 237, 0.3);
+}
+
+.link:not(.link[data-role='loginBtn']) {
+    margin-bottom: 10px;
+}
+
+.link svg {
+    fill: #363636;
+    transition: fill .3s ease-out, border .3s ease-out;
+    border-radius: 50px;
+}
+
+.link:hover svg {
+    fill: white;
+}
+
+.link:hover {
+    background-color: #363636;
+}
+
+.disable {
+    cursor: none;
+}
+
+.disable svg {
+    fill: #9f9f9f;
+}
+
+@media screen and (max-width: 1700px) {
+    .footer {
+        right: 6px;
+        top: 215px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        display: none;
+    }
+}

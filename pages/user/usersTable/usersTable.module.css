@@ -1,0 +1,173 @@
+.wrapper {
+	box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+	width: fit-content;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.table {
+	position: relative;
+	background-color: #bbbbbb5b;
+	width: 1000px;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid white;
+}
+
+.header,
+.body_row {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+}
+
+.header {
+	background-color: rgb(44, 44, 44);
+	border-radius: 5px 5px 0 0;
+}
+
+.header_item,
+.row_item {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+	border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+.row_item {
+	font-family: var(--font-light);
+	font-size: 16px;
+}
+
+.header_item:nth-child(1),
+.row_item:nth-child(1) {
+	flex: 1;
+}
+.header_item:nth-child(2),
+.row_item:nth-child(2) {
+	flex: 2;
+}
+.header_item:nth-child(3),
+.row_item:nth-child(3) {
+	flex: 5;
+}
+.header_item:nth-child(4),
+.row_item:nth-child(4) {
+	flex: 4;
+}
+.header_item:nth-child(5),
+.row_item:nth-child(5) {
+	flex: 4;
+}
+.header_item:nth-child(6),
+.row_item:nth-child(6) {
+	flex: 4;
+}
+
+.row_item,
+.body_row {
+	position: relative;
+}
+
+.row_item input {
+	box-sizing: border-box;
+	width: 98%;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: inherit;
+	font-family: inherit;
+	outline-color: white;
+	outline-width: 1px;
+	text-align: center;
+}
+
+.row_item input:focus {
+	background-color: #ffffff;
+	color: rgb(43, 43, 43);
+}
+
+.row_item input::placeholder {
+	font-size: 12px;
+	color: black;
+}
+.row_edit,
+.row_delete,
+.row_save {
+	position: absolute;
+	z-index: 5;
+	border-radius: 25px;
+	top: 0;
+}
+
+.row_edit {
+	left: 2px;
+	padding: 2px;
+}
+
+.row_delete {
+	right: -47px;
+}
+
+.row_save {
+	left: -48px;
+}
+
+.save_btn,
+.reset_logger_btn {
+	position: absolute;
+}
+
+.save_btn {
+	bottom: -143px;
+	left: 5px;
+}
+
+.reset_logger_btn {
+	bottom: -98px;
+	right: 4px;
+}
+
+.password {
+	background-color: #f3f3f3ce;
+	/* color: #ffffffd0; */
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: rgb(94, 94, 94);
+	box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.808);
+	cursor: pointer;
+}
+
+.password:hover {
+	color: rgb(10, 10, 10);
+}
+
+.error {
+	text-align: center;
+	border-top: 1px solid #cccccc;
+	padding-top: 12px;
+	margin-top: 7px;
+}
+
+.error {
+	color: red;
+}
+
+.logging {
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 1000px;
+	border: none;
+	background-color: rgb(44, 44, 44);
+	color: white;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 0 0 5px 5px;
+	resize: none;
+	height: 100px;
+	line-height: 1.4em;
+	overflow: hidden;
+}

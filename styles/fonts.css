@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "Comfortaa-Regular";
+	src: url("fonts/Comfortaa-Regular.woff2") format("woff2"), url("fonts/Comfortaa-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: "Comfortaa-Light";
+	src: url("fonts/Comfortaa-Light.woff2") format("woff2"), url("fonts/Comfortaa-Light.woff") format("woff");
+}
+@font-face {
+	font-family: "Comfortaa-Medium";
+	src: url("fonts/Comfortaa-Medium.woff2") format("woff2"), url("fonts/Comfortaa-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: "Comfortaa-SemiBold";
+	src: url("fonts/Comfortaa-SemiBold.woff2") format("woff2"), url("fonts/Comfortaa-SemiBold.woff") format("woff");
+}
+@font-face {
+	font-family: "Comfortaa-Bold";
+	src: url("fonts/Comfortaa-Bold.woff2") format("woff2"), url("fonts/Comfortaa-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "RationalDisplay-ExtraLight";
+	src: url("fonts/RationalDisplay-ExtraLight.woff2") format("woff2"),
+		url("fonts/RationalDisplay-ExtraLight.woff") format("woff");
+}
+@font-face {
+	font-family: "RationalDisplay-Book";
+	src: url("fonts/RationalDisplay-Book.woff2") format("woff2"), url("fonts/RationalDisplay-Book.woff") format("woff");
+}
+@font-face {
+	font-family: "RationalDisplay-Light";
+	src: url("fonts/RationalDisplay-Light.woff2") format("woff2"), url("fonts/RationalDisplay-Light.woff") format("woff");
+}
+@font-face {
+	font-family: "RationalDisplay-Medium";
+	src: url("fonts/RationalDisplay-Medium.woff2") format("woff2"),
+		url("fonts/RationalDisplay-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "RationalDisplay-SemiBold";
+	src: url("fonts/RationalDisplay-SemiBold.woff2") format("woff2"),
+		url("fonts/RationalDisplay-SemiBold.woff") format("woff");
+}
+@font-face {
+	font-family: "RationalDisplay-Bold";
+	src: url("fonts/RationalDisplay-Bold.woff2") format("woff2"), url("fonts/RationalDisplay-Bold.woff") format("woff");
+}

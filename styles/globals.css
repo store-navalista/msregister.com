@@ -1,0 +1,44 @@
+@import "null.css";
+@import "fonts.css";
+@import "variables.css";
+
+html {
+	font-family: var(--font-medium);
+}
+
+html* {
+	outline-color: #adadad;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+*::-webkit-scrollbar {
+	width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #90959d;
+	border-radius: 20px;
+	border: 1px solid white;
+	padding: 2px;
+}
+
+.body-wrapper {
+	padding-left: var(--aside-width);
+	padding-top: var(--header-height);
+}
+
+@media screen and (max-width: 1024px) {
+	.body-wrapper {
+		padding-left: 0;
+	}
+}

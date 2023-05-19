@@ -1,0 +1,154 @@
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+}
+
+.link {
+    position: relative;
+    color: var(--color-text-darkgrey);
+    font-family: var(--font-medium);
+    font-size: 14px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.link:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-first-orange);
+    transition: width 0.5s;
+}
+
+.link:hover {
+    color: var(--color-second-blue);
+}
+
+.link:hover.link:after{
+    width: 20px;
+}
+
+.link__active.link:hover.link:after {
+    width: 11px;
+}
+
+.link__active {
+
+}
+
+.link__active.link:after{
+    width: 11px;
+}
+
+.link__active.link:first-letter{
+    font-family: var(--font-bold);
+}
+
+.logo {
+    display: flex;
+    height: 33px;
+    padding: 0 30px;
+}
+
+.mobile {
+    display: none;
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 3px 4px 1px 3px;
+    transition: box-shadow .5s, filter .5s;
+}
+
+.mobile h2 {
+    text-transform: uppercase;
+}
+
+.mobile img[alt='menu'] {
+    transition: transform .5s, filter .5s;
+}
+
+
+.mobileClick {
+    box-shadow: none;
+}
+
+.mobileClick > img[alt='menu'] {
+    transform: scale(0.9);
+    filter: blur(1px);
+}
+
+.mobile img{
+    width: 28px;
+    height: 28px;
+}
+
+.mobile ul {
+    --header-hight: 80px;
+    display: none;
+    position: fixed;
+    box-sizing: border-box;
+    top: var(--header-hight);
+    left: 0;
+    width: calc(100vw);
+    height: calc(100vh - var(--header-hight));
+    color: white;
+    padding: 30px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    overflow: auto;
+    z-index: 9999;
+}
+
+.mobile ul div img {
+    margin-bottom: 16px;
+}
+
+.mobile ul li {
+    line-height: 2.4em;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.mobile a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mobile ul h2 {
+    line-height: 3em;
+    text-decoration: underline;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+
+.mobileClick ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileClick li {
+    display: inline-block;
+}
+
+@media screen and (max-width: 558px) {
+    .logo {
+        display: none;
+    }
+    .screen {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

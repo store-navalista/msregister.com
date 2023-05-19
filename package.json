@@ -1,0 +1,33 @@
+{
+	"name": "client",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"build:linux": "node --max-old-space-size=2048 node_modules/next/dist/bin/next build",
+		"start": "NODE_ENV=production node server.js"
+	},
+	"dependencies": {
+		"@emotion/styled": "^11.6.0",
+		"@mui/icons-material": "^5.2.5",
+		"@mui/lab": "^5.0.0-alpha.64",
+		"@mui/material": "^5.2.8",
+		"@mui/styled-engine-sc": "^5.1.0",
+		"@types/node": "^16.4.3",
+		"@types/react": "^17.0.19",
+		"@types/react-dom": "^17.0.9",
+		"@types/webpack-env": "^1.16.2",
+		"axios": "^0.25.0",
+		"email-validator": "^2.0.4",
+		"eslint-config-next": "^13.2.4",
+		"fs": "^0.0.1-security",
+		"mobx": "^6.3.12",
+		"mobx-react-lite": "^3.2.3",
+		"next": "^13.2.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sharp": "^0.32.0",
+		"styled-components": "^5.3.3"
+	}
+}

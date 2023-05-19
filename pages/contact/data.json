@@ -1,0 +1,16 @@
+{
+	"h1": "Our Contacts",
+	"text": [
+		{"h3": "Feel free to contact us:"},
+		{"h4": "General issues: "},
+		{"mail": "office@msregister.com"},
+		{"h4": "Requests for service: "},
+		{"mail": "request@msregister.com"},
+		{"h4": "Port State Control issues: "},
+		{"mail": "psc@msregister.com"},
+		{"h4": "Accounts matters: "},
+		{"mail": "accounts@msregister.com "},
+		{"h4": "Phone Number(ALL Cases): "},
+		{"phone": "+44 (744) 992 05 35"}
+	]
+}

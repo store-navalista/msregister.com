@@ -1,0 +1,35 @@
+{
+  "h1": "CERTIFICATION",
+  "text": [
+    "Mediterranean Shipping Register offers the following certifications:",
+    "1. ISM Code Certification – certification of safety management systems of shipping companies and ships for compliance with the requirements of the International Safety Management Code for the Safe Operation of Ships and for Pollution Prevention (ISM Code):",
+    [
+      "Mandatory certification of shipping companies and ships on behalf of Maritime Administrations for compliance with the ISM Code requirements and regulations",
+      "Non-compulsory certification of shipping companies and ships not covered by the requirements of Chapter IX, SOLAS-74 for compliance with the ISM Code requirements and regulations",
+      "Review of Safe Management System documentation",
+      "Issuing and endorsement of the Document of Compliance (DOC) and Safety Management Certificate (SMC)"
+    ],
+    "2. ISPS Code Certification",
+    [
+      "Verification of ship's security for compliance with the requirements of the International Ship and Port Facility Security Code (ISPS Code):",
+      [
+        "Review and approve Ship Security Plan (SSP) and its amendments on behalf of Maritime Administrations",
+        "Mandatory verification of ship’s compliance with ISPS Code requirements and regulations on behalf of Maritime Administrations",
+        "Non-compulsory verification of ships not covered by the requirements of Chapter IX-2, SOLAS-74 for compliance with ISPS Code requirements and regulations",
+        "Issuing and endorsement of the International Ship Security Certificate (ISSC)"
+      ]
+    ],
+    "3. MLC, 2006 Certification",
+    [
+      "MSR carries out the full scope of certification and inspection works for compliance with the Maritime Labour Convention 2006 requirements, such as:",
+      [
+        "Ships certification for compliance with MLC requirements",
+        "Declaration of Maritime Labour Compliance review and endorsement",
+        "Issuing and endorsement of MLC certificate",
+        "Non-compulsory audit of crewing agencies under the Maritime Labour Convention, 2006 Regulation 1.4"
+      ]
+    ],
+    "4. Management systems certification. The certification criteria are: standards of ISO 9001 Series, ISO 14001, ISO 45001",
+    "5. Certification of organizations that perform activities in accordance with IC STCW. MSR conducts certification of training centers that provide training in accordance with the requirements of Rule I/12, Chapters V and VI, STCW Convention"
+  ]
+}

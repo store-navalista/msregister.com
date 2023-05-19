@@ -1,0 +1,29 @@
+.aside {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    backdrop-filter: blur(10px);
+    background: rgba(19, 19, 19, 0.9) url('../../src/assets/images/svg/404_bg.svg') 50% 50%/cover no-repeat;
+}
+
+.link {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    display: inline-block;
+    padding: 9px 12px 6px;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--font-bold);
+    font-size: 13px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        font-size: 11px;
+    }
+}

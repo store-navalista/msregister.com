@@ -1,0 +1,42 @@
+.btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.block {
+    transform: translate(0, -28.5px);
+}
+
+.block img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transition: transform .5s;
+}
+
+.block img:first-child {
+    left: -24px;
+}
+
+.preloader {
+    position: absolute;
+    right: 25px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    animation: rotatePreloader 2s linear infinite;
+    display: none;
+}
+
+@keyframes rotatePreloader {
+    from {transform:rotate(0deg)}
+    to {transform:rotate(360deg)}
+}

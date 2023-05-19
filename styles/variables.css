@@ -1,0 +1,16 @@
+html {
+	--header-height: 80px;
+	--aside-width: 300px;
+	--color-first-orange: #f8a541;
+	--color-second-blue: #39527a;
+	--color-third-green: #61b357;
+	--color-text-main: #676767;
+	--color-text-dark: #242424;
+	--color-text-darkgrey: #464646;
+	--color-text-grey: #8c8c8c;
+	--font-light: "RationalDisplay-Light", sans-serif;
+	--font-regular: "RationalDisplay-Book", sans-serif;
+	--font-medium: "RationalDisplay-Book", sans-serif;
+	--font-semibold: "RationalDisplay-Medium", sans-serif;
+	--font-bold: "RationalDisplay-Medium", sans-serif;
+}
