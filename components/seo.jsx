@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 export default function Seo({ description = 'Error', pageTitle = 'Error Page', siteTitle = 'MSR' }) {
    const router = useRouter()
 
-   if (router.pathname === '/certificates') pageTitle = 'Certificates'
+   if (router.pathname === '/certificate-verification') pageTitle = 'Certificates'
 
    return (
       <Head>

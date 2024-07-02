@@ -107,18 +107,57 @@ const renderToolbar = (Toolbar) => (
 
 function CertificatesContent({ pdf_file }) {
    const defaultLayoutPluginInstance = defaultLayoutPlugin({
+      sidebarTabs: (defaultTabs) => [defaultTabs[0]],
       renderToolbar
    })
+
+   const renderWithWaterMarks = (props) => (
+      <>
+         {props.canvasLayer.children}
+         <div
+            style={{
+               alignItems: 'center',
+               display: 'flex',
+               height: '100%',
+               justifyContent: 'center',
+               left: 0,
+               position: 'absolute',
+               top: 0,
+               width: '100%'
+            }}
+         >
+            <div
+               style={{
+                  color: '#0474295b',
+                  fontSize: `${6 * props.scale}rem`,
+                  fontWeight: 'bold',
+                  textTransform: 'uppercase',
+                  transform: 'rotate(-45deg)',
+                  userSelect: 'none'
+               }}
+            >
+               DOCUMENT VERIFIED
+            </div>
+         </div>
+         {props.annotationLayer.children}
+         {props.textLayer.children}
+      </>
+   )
 
    return (
       <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
          <div className={st.wrapper}>
             <div className={st.pdf_viewer}>
                <Viewer
+                  theme={{
+                     theme: 'dark'
+                  }}
+                  defaultScale={2}
                   plugins={[defaultLayoutPluginInstance]}
                   pageLayout={pageLayout}
                   renderError={renderError}
-                  fileUrl={`/certificates/${pdf_file}`}
+                  fileUrl={`/certificates/${pdf_file?.replace(/\//g, '-')}.pdf`}
+                  renderPage={renderWithWaterMarks}
                />
             </div>
          </div>
