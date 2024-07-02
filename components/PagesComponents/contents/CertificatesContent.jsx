@@ -152,7 +152,6 @@ function CertificatesContent({ pdf_file }) {
                   theme={{
                      theme: 'dark'
                   }}
-                  defaultScale={2}
                   plugins={[defaultLayoutPluginInstance]}
                   pageLayout={pageLayout}
                   renderError={renderError}
