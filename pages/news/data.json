@@ -1,0 +1,83 @@
+{
+   "h1": "NEWS",
+   "news": [
+      {
+         "id": 1,
+         "url": "1-2023-12-14-revised-solas-radiocommunications-gmdss-requirements",
+         "time": "2023-12-14",
+         "title": "Revised SOLAS Radiocommunications GMDSS Requirements"
+      },
+      {
+         "id": 2,
+         "url": "2-2024-01-09-new-installations-of-vhf-mf-hf-radio-installations",
+         "time": "2024-01-09",
+         "title": "New Installations of VHF, MF/HF radio installations and Inmarsat-C ship earth stations"
+      },
+      {
+         "id": 3,
+         "url": "3-2023-08-07-hong-kong-convention",
+         "time": "2023-08-07",
+         "title": "Hong Kong Convention"
+      },
+      {
+         "id": 4,
+         "url": "4-2024-01-10-imsbc-code",
+         "time": "2024-01-10",
+         "title": "IMSBC Code"
+      },
+      {
+         "id": 5,
+         "url": "5-2023-08-09-towing-and-mooring-equipment",
+         "time": "2023-08-09",
+         "title": "Towing and Mooring Equipment"
+      },
+      {
+         "id": 6,
+         "url": "6-2023-12-12-electronic-bunker-delivery-note",
+         "time": "2023-12-12",
+         "title": "Electronic Bunker Delivery Note"
+      },
+      {
+         "id": 7,
+         "url": "7-2023-12-12-eu-mrv-monitoring-plan",
+         "time": "2023-12-12",
+         "title": "EU MRV Monitoring Plan"
+      },
+      {
+         "id": 8,
+         "url": "8-2023-08-29-fire-safety-concentrated-inspection",
+         "time": "2023-08-29",
+         "title": "Fire Safety Concentrated Inspection"
+      },
+      {
+         "id": 9,
+         "url": "9-2024-04-15-new-requirements-to-garbage-record",
+         "time": "2024-04-15",
+         "title": "New Requirements to Garbage Record"
+      },
+      {
+         "id": 10,
+         "url": "10-2023-12-20-ballast-water-chalenging-condition",
+         "time": "2023-12-20",
+         "title": "Ballast Water Chalenging Condition"
+      },
+      {
+         "id": 11,
+         "url": "11-2024-08-05-mlc-amendments",
+         "time": "2024-08-05",
+         "title": "MLC Amendments"
+      },
+      {
+         "id": 12,
+         "url": "12-2024-10-05-ballast-water-record-book-format",
+         "time": "2024-10-05",
+         "title": "Ballast Water Record Book Format"
+      },
+      {
+         "id": 13,
+         "url": "13-2024-11-30-marpol-annex-vi-fuel-oil-sampling",
+         "time": "2024-11-30",
+         "title": "MARPOL Annex vi Fuel Oil Sampling"
+      }
+   ]
+}

@@ -1,0 +1,10 @@
+.news_wrapper {
+   width: 100%;
+   padding: 50px;
+   background-color: rgba(0, 0, 0, 0.7);
+   backdrop-filter: blur(8px);
+   box-sizing: border-box;
+   transition: backdrop-filter 1s;
+   height: calc(100vh - var(--header-height) - 100px);
+   overflow: auto;
+}
