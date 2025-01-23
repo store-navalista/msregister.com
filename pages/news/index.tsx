@@ -18,12 +18,13 @@ interface DataProps {
 
 const News: FC<{ data: DataProps }> = ({ data }) => {
    const { h1, news } = data
+   const sortedNews = news.sort((a, b) => new Date(b.time).getTime() - new Date(a.time).getTime())
 
    return (
       <div className='body-wrapper'>
          <h1 className='h1'>{h1}</h1>
          <div className={css.news_wrapper}>
-            <NewsContent news={news} />
+            <NewsContent news={sortedNews} />
          </div>
       </div>
    )
