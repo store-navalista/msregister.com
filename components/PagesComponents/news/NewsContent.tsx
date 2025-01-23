@@ -8,7 +8,7 @@ const NewsContent: FC<{ news: NewProps[] }> = ({ news }) => {
    return (
       <div className={css.wrapper}>
          {news.map((item) => {
-            const { id, time, title, url } = item
+            const { id, time, title, url, original_source } = item
 
             return (
                <Link href={`/news/${url}`} key={id} style={{ textDecoration: 'none' }} passHref>
@@ -18,13 +18,16 @@ const NewsContent: FC<{ news: NewProps[] }> = ({ news }) => {
                      </div>
                      <div className={css.news_content}>
                         <h3 className={css.news_title}>{title}</h3>
-                        <time dateTime={time} className={css.news_date}>
-                           {new Date(time).toLocaleDateString('en-UK', {
-                              day: 'numeric',
-                              month: 'long',
-                              year: 'numeric'
-                           })}
-                        </time>
+                        <div>
+                           <time dateTime={time} className={css.news_date}>
+                              {new Date(time).toLocaleDateString('en-UK', {
+                                 day: 'numeric',
+                                 month: 'long',
+                                 year: 'numeric'
+                              })}
+                           </time>
+                           <p className={css.original}>{original_source}</p>
+                        </div>
                      </div>
                   </article>
                </Link>

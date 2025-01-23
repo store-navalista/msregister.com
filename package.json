@@ -28,6 +28,7 @@
       "email-validator": "^2.0.4",
       "eslint-config-next": "12.3.1",
       "fs": "^0.0.1-security",
+      "lodash": "^4.17.21",
       "mobx": "^6.3.12",
       "mobx-react-lite": "^3.2.3",
       "next": "^13.2.4",
@@ -40,6 +41,7 @@
    },
    "devDependencies": {
       "@eslint/js": "^9.6.0",
+      "@types/lodash": "^4.17.14",
       "eslint": "^8.57.0",
       "eslint-plugin-react": "^7.34.3",
       "globals": "^15.7.0"

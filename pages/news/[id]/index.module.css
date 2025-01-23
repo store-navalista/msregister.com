@@ -11,6 +11,12 @@
    line-height: 1.4;
 }
 
+@media screen and (max-width: 640px) {
+   .new_wrapper {
+      padding: 24px;
+   }
+}
+
 .new_wrapper h2,
 .new_wrapper h3 {
    text-shadow: 3px 3px 4px rgba(150, 150, 150, 1);
