@@ -93,6 +93,32 @@ h3 {
    width: 1100px;
 }
 
+blockquote {
+   position: relative;
+   width: fit-content;
+   & > p {
+      font-size: 12px !important;
+      color: #ffffff94;
+   }
+
+   &::after,
+   &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff94;
+   }
+
+   &::after {
+      top: -1px;
+   }
+
+   &::before {
+      bottom: 0;
+   }
+}
+
 @media screen and (max-width: 610px) {
    .img-size_1 {
       width: 100%;

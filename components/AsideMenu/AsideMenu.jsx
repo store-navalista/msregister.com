@@ -12,7 +12,7 @@ export default function AsideMenu({ store }) {
             <nav className={st.nav}>
                {asidePages.map((page) => {
                   const { id, href, title } = page
-                  const isActive = router.pathname.startsWith(href) // Проверяем, начинается ли текущий путь с href
+                  const isActive = router.pathname.startsWith(href)
                   return (
                      <Link key={id} href={href} legacyBehavior>
                         <a className={st.link + (isActive ? ` ${st.link__active}` : '')}>{title}</a>
