@@ -17,10 +17,10 @@
    }
 }
 
-.new_wrapper h2,
+/* .new_wrapper h2,
 .new_wrapper h3 {
    text-shadow: 3px 3px 4px rgba(150, 150, 150, 1);
-}
+} */
 
 .new_wrapper h2 {
    font-size: 28px;
@@ -33,10 +33,6 @@
    font-size: 22px;
    text-align: left;
    margin-bottom: 18px;
-}
-
-.new_wrapper h3::first-letter {
-   color: aqua;
 }
 
 .new_wrapper h4 {
@@ -59,10 +55,6 @@
 
 .new_wrapper strong {
    font-weight: 600;
-}
-
-.new_wrapper strong::first-letter {
-   color: aqua;
 }
 
 .new_wrapper ul {
