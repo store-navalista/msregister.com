@@ -11,7 +11,6 @@ export type NewProps = {
    time: string
    title: string
    url: string
-   original_source: string
 }
 
 interface DataProps {
