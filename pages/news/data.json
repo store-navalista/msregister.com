@@ -104,6 +104,12 @@
          "title": "SEEMP Company Audit"
       },
       {
+         "id": 18,
+         "url": "18-2025-01-30-new_pollution_fines_in_turkish",
+         "time": "2025-01-30",
+         "title": "New Pollution Fines in Turkish"
+      },
+      {
          "id": 19,
          "url": "19-2025-02-03-turkey_escalates_inspections",
          "time": "2025-02-03",
@@ -126,6 +132,12 @@
          "url": "22-2025-02-22-remote-audits-guidance",
          "time": "2025-02-10",
          "title": "Remote Audits Guidance"
+      },
+      {
+         "id": 23,
+         "url": "23-2025-02-13-amendments_to_the_2011",
+         "time": "2025-02-13",
+         "title": "Amendments to the 2011"
       }
    ]
 }
