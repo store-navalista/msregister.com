@@ -62,10 +62,17 @@
    max-width: 1100px;
 }
 
+.new_wrapper ul > li {
+   list-style: disc;
+}
+
+.new_wrapper ol > li {
+   list-style: decimal;
+}
+
 .new_wrapper li {
    font-size: 16px;
    margin-left: 32px;
-   list-style: disc;
    line-height: 1.5;
    margin-bottom: 12px;
 }

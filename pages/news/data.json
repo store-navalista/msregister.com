@@ -144,6 +144,24 @@
          "url": "24-2025-02-17-status_of_conventions",
          "time": "2025-02-17",
          "title": "Status of Conventions"
+      },
+      {
+         "id": 25,
+         "url": "25-2025-02-25-hatch_covers_tightness_in_question",
+         "time": "2025-02-25",
+         "title": "Hatch Covers Tightness in Question"
+      },
+      {
+         "id": 26,
+         "url": "26-2025-03-03-cyber_security",
+         "time": "2025-03-03",
+         "title": "Cyber security"
+      },
+      {
+         "id": 27,
+         "url": "27-2025-05-27-iacs_releases_new_guidelines_on_safety standards",
+         "time": "2025-05-27",
+         "title": "IACS Releases New Guidelines on Safety Standards"
       }
    ]
 }
