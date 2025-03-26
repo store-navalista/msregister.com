@@ -162,6 +162,24 @@
          "url": "27-2025-03-05-iacs_releases_new_guidelines_on_safety_standards",
          "time": "2025-03-05",
          "title": "IACS Releases New Guidelines on Safety Standards"
+      },
+      {
+         "id": 28,
+         "url": "28-2025-03-24-stability_information_requirements",
+         "time": "2025-03-24",
+         "title": "Stability Information Requirements"
+      },
+      {
+         "id": 29,
+         "url": "29-2025-03-24-recommendations_and_best_practice",
+         "time": "2025-03-24",
+         "title": "Recommendations and best practice"
+      },
+      {
+         "id": 30,
+         "url": "30-2025-03-26-mediterranean_sox_eca",
+         "time": "2025-03-26",
+         "title": "Mediterranean SOx ECAe"
       }
    ]
 }
