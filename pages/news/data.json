@@ -165,8 +165,8 @@
       },
       {
          "id": 28,
-         "url": "28-2025-03-24-stability_information_requirements",
-         "time": "2025-03-24",
+         "url": "28-2025-03-15-stability_information_requirements",
+         "time": "2025-03-15",
          "title": "Stability Information Requirements"
       },
       {
@@ -179,7 +179,13 @@
          "id": 30,
          "url": "30-2025-03-26-mediterranean_sox_eca",
          "time": "2025-03-26",
-         "title": "Mediterranean SOx ECAe"
+         "title": "Mediterranean SOx ECA"
+      },
+      {
+         "id": 31,
+         "url": "31-2025-04-01-ships_collision",
+         "time": "2025-04-01",
+         "title": "Ships Collision"
       }
    ]
 }
