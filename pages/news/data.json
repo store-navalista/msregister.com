@@ -186,6 +186,18 @@
          "url": "31-2025-04-01-ships_collision",
          "time": "2025-04-01",
          "title": "Ships Collision"
+      },
+      {
+         "id": 32,
+         "url": "32-2025-04-07-first_commercial_vessel_with_ammonia_fuel",
+         "time": "2025-04-07",
+         "title": "First Commercial Vessel With Ammonia Fuel"
+      },
+      {
+         "id": 33,
+         "url": "33-2025-04-10-class_societies_collaborate_to_standardise_emissions_data_fields_at_imo",
+         "time": "2025-04-10",
+         "title": "Class Societies Collaborate to Standardise Emissions Data Fields at IMO"
       }
    ]
 }
