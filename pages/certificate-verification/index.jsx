@@ -17,4 +17,4 @@ function Certificates() {
 
 export default Certificates
 // /certificate-verification/9334648/12406003/certificate-of-classification-hull-and-machinery
-// https://www.msregister.com/certificate-verification?IMO=9334648/12406003/certificate-of-classification-hull-and-machinery
+// https://www.msregister.com/certificate-verification?IMO=9227869/declarations/signed-dmlc-2
