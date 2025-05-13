@@ -84,7 +84,7 @@ const News: FC<{ data: DataProps }> = ({ data }) => {
 }
 
 export async function getStaticProps() {
-   const seo = store.asidePages.find((p) => p.id === 10).seo
+   const seo = store.asidePages.find((p) => p.id === 11).seo
 
    return {
       props: {

@@ -122,11 +122,11 @@ let store = {
       },
       {
          id: 5,
-         title: 'Technical Supevision in Industry',
-         href: '/services/technical-supevision-in-industry',
+         title: 'Technical Supervision in Industry',
+         href: '/services/technical-supervision-in-industry',
          seo: {
-            description: 'Technical Supevision in Industry.',
-            pageTitle: 'Technical Supevision in Industry',
+            description: 'Technical Supervision in Industry.',
+            pageTitle: 'Technical Supervision in Industry',
             siteTitle: 'Mediterranean Shipping Register'
          }
       },
@@ -170,8 +170,18 @@ let store = {
             siteTitle: 'Mediterranean Shipping Register'
          }
       },
+      // {
+      //    id: 10,
+      //    title: 'Client support',
+      //    href: '/for-clients',
+      //    seo: {
+      //       description: 'Client support.',
+      //       pageTitle: 'Client support',
+      //       siteTitle: 'Mediterranean Shipping Register'
+      //    }
+      // },
       {
-         id: 10,
+         id: 11,
          title: 'News',
          href: '/news',
          seo: {
