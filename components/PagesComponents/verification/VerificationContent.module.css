@@ -13,6 +13,8 @@
       max-width: 1200px;
       @media screen and (max-width: 500px) {
          padding: 32px 16px;
+         overflow: auto;
+         height: 78svh;
       }
       &:after {
          position: absolute;
