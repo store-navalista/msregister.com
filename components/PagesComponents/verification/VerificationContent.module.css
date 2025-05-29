@@ -16,7 +16,7 @@
          padding: 32px 16px;
       }
       @media screen and (max-height: 922px) {
-         height: 78svh;
+         height: clamp(181px, calc(-186.84px + 904.84 * (100vh / 920)), 718px);
       }
       &:after {
          position: absolute;
