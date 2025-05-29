@@ -8,7 +8,7 @@ export const Main: FC<{ utn: string }> = ({ utn }) => {
    const router = useRouter()
    const [loading, setLoading] = React.useState(false)
    const [error, setError] = React.useState('')
-   const [editedUTN, setEditedUTN] = React.useState(null)
+   const [editedUTN, setEditedUTN] = React.useState('')
    const [fetchTrigger, setFetchTrigger] = React.useState(false)
 
    const changeUTN = (e: React.ChangeEvent<HTMLInputElement>) => {
