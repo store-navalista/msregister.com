@@ -170,16 +170,16 @@ let store = {
             siteTitle: 'Mediterranean Shipping Register'
          }
       },
-      // {
-      //    id: 10,
-      //    title: 'Client support',
-      //    href: '/for-clients',
-      //    seo: {
-      //       description: 'Client support.',
-      //       pageTitle: 'Client support',
-      //       siteTitle: 'Mediterranean Shipping Register'
-      //    }
-      // },
+      {
+         id: 10,
+         title: 'Client support',
+         href: '/for-clients',
+         seo: {
+            description: 'Client support.',
+            pageTitle: 'Client support',
+            siteTitle: 'Mediterranean Shipping Register'
+         }
+      },
       {
          id: 11,
          title: 'News',

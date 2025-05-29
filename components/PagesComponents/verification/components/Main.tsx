@@ -21,7 +21,7 @@ export const Main: FC<{ utn: string }> = ({ utn }) => {
    const verifyHandler = async () => {
       setLoading(true)
       setFetchTrigger((prevState) => !prevState)
-      router.push(`/for-clients/verification/${editedUTN}`)
+      await router.push(`/for-clients/verification/${editedUTN}`)
    }
 
    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {

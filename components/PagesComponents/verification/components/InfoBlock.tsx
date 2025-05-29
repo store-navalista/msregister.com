@@ -1,7 +1,7 @@
+import axios from 'axios'
+import Image from 'next/image'
 import React, { FC, useCallback, useEffect } from 'react'
 import css from '../VerificationContent.module.css'
-import Image from 'next/image'
-import axios from 'axios'
 
 type InfoBlockProps = {
    utn: string
@@ -15,29 +15,66 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
    const [data, setData] = React.useState(null)
 
    useEffect(() => {
+      let cancelled = false
+
       const fetchData = async () => {
          if (!utn) return
          setError('')
          setLoading(true)
          try {
-            const response = await axios.get(`/api/mock?utn=${utn}`)
-            setData(response.data)
+            const response = await axios.get(`/api/verify`, {
+               params: { utn }
+            })
+            if (!cancelled) {
+               setData(response.data)
+            }
          } catch (error) {
-            setError('No results found...')
-            setData(null)
-            console.error('Error fetching data:', error)
+            if (!cancelled) {
+               setError('No results found...')
+               setData(null)
+               console.error('Error fetching data:', error)
+            }
          } finally {
-            setLoading(false)
+            if (!cancelled) {
+               setLoading(false)
+            }
          }
       }
+
       fetchData()
+
+      return () => {
+         cancelled = true
+      }
    }, [utn, fetchTrigger])
 
    const downloadHandler = () => {
+      if (!data?.signed_file) return
+
       setIsCertificateDownloading(true)
-      setTimeout(() => {
-         setIsCertificateDownloading(false)
-      }, 2000)
+
+      try {
+         const byteCharacters = atob(data.signed_file)
+         const byteNumbers = new Array(byteCharacters.length).fill(null).map((_, i) => byteCharacters.charCodeAt(i))
+         const byteArray = new Uint8Array(byteNumbers)
+         const blob = new Blob([byteArray], {
+            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+         })
+
+         const link = document.createElement('a')
+         link.href = URL.createObjectURL(blob)
+         link.download = `${data.certificate_number || 'certificate'}.docx`
+         document.body.appendChild(link)
+         link.click()
+         document.body.removeChild(link)
+      } catch (e) {
+         console.error('Error creating and downloading file:', e)
+         setError('Error downloading file')
+      } finally {
+         setTimeout(() => {
+            setIsCertificateDownloading(false)
+         }, 2000)
+      }
    }
 
    if (!data) return
@@ -55,38 +92,40 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
             </div>
             <div className={css.data_item}>
                <p>IMO Number</p>
-               <p>{data.imo}</p>
+               <p>{data.imo_number}</p>
             </div>
             <div className={css.data_item}>
                <p>Certificate Number</p>
-               <p>{data.cert_number}</p>
+               <p>{data.certificate_number}</p>
             </div>
             <div className={css.data_item}>
                <p>Certificate Status</p>
-               <p>{data.cert_status}</p>
+               <p>{data.certificate_status}</p>
             </div>
             <div className={css.data_item}>
                <p>Certificate Name</p>
-               <p>{data.cert_name}</p>
+               <p>{data.certificate_name}</p>
             </div>
             <div className={css.data_item}>
                <p>Issue Date</p>
                <p>{data.issue_date}</p>
             </div>
          </div>
-         <button onClick={downloadHandler} className={css.download_button} disabled={isCertificateDownloading}>
-            <div style={{ opacity: isCertificateDownloading ? 0 : 1 }}>
-               <Image src='/svg/download.svg' alt='arrow' width={20} height={20} />
-               <p>View E-Certificate</p>
-            </div>
-            <Image
-               style={{ opacity: !isCertificateDownloading ? 0 : 1 }}
-               src='/svg/loader-light.svg'
-               alt='arrow'
-               width={24}
-               height={24}
-            />
-         </button>
+         {data?.signed_file && (
+            <button onClick={downloadHandler} className={css.download_button} disabled={isCertificateDownloading}>
+               <div style={{ opacity: isCertificateDownloading ? 0 : 1 }}>
+                  <Image src='/svg/download.svg' alt='arrow' width={20} height={20} />
+                  <p>View E-Certificate</p>
+               </div>
+               <Image
+                  style={{ opacity: !isCertificateDownloading ? 0 : 1 }}
+                  src='/svg/loader-light.svg'
+                  alt='arrow'
+                  width={24}
+                  height={24}
+               />
+            </button>
+         )}
       </div>
    )
 }
