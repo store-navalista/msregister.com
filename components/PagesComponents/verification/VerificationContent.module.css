@@ -11,9 +11,11 @@
       padding: 36px;
       border-radius: 8px;
       max-width: 1200px;
+      overflow: auto;
       @media screen and (max-width: 500px) {
          padding: 32px 16px;
-         overflow: auto;
+      }
+      @media screen and (max-height: 922px) {
          height: 78svh;
       }
       &:after {
