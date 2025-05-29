@@ -9,14 +9,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
    }
 
    try {
-      const response = await axios.get(
-         `https://elma.tm-z.com/api/extensions/ee218b9a-3cee-4c9e-8fae-1d4f2069b05a/script/get_full_sertificate_data/${utn}`,
-         {
-            headers: {
-               Authorization: `Bearer ${process.env.ELMA_API_TOKEN}`
-            }
+      const response = await axios.get(`${process.env.ELMA_API_URL}${utn}`, {
+         headers: {
+            Authorization: `Bearer ${process.env.ELMA_API_TOKEN}`
          }
-      )
+      })
 
       res.status(200).json(response.data)
    } catch (error: any) {
