@@ -15,7 +15,7 @@ function Verification() {
             <ul className={css.verfify_link}>
                <li>
                   <Link href='/for-clients/verification'>
-                     <Image src='/svg/support-verify.svg' alt='verify' width={20} height={20} /> Verifiy Certificate
+                     <Image src='/svg/support-verify.svg' alt='verify' width={20} height={20} /> Verify Certificate
                   </Link>
                   <p>On this page you can verify the certificate.</p>
                </li>
