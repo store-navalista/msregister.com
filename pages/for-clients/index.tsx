@@ -3,6 +3,8 @@ import store from '../../store/store'
 import Link from 'next/link'
 import css from './index.module.css'
 import Image from 'next/image'
+import { SurveyPDF } from '@/components/PagesComponents/pdf_creator/PDFCreator'
+import { tables } from './temp'
 
 function Verification() {
    return (
@@ -21,6 +23,7 @@ function Verification() {
                </li>
             </ul>
          </div>
+         {/* <SurveyPDF tables={tables} /> */}
       </div>
    )
 }
