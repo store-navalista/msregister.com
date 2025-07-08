@@ -1,6 +1,6 @@
 import axios from 'axios'
 import Image from 'next/image'
-import React, { FC, useEffect } from 'react'
+import React, { FC, useCallback, useEffect } from 'react'
 import css from '../VerificationContent.module.css'
 
 type InfoBlockProps = {
@@ -22,7 +22,7 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
          setError('')
          setLoading(true)
          try {
-            const response = await axios.get(`/api/verify`, {
+            const response = await axios.get('/api/verify', {
                params: { utn }
             })
             if (!cancelled) {
@@ -58,14 +58,18 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
          const byteNumbers = new Array(byteCharacters.length).fill(null).map((_, i) => byteCharacters.charCodeAt(i))
          const byteArray = new Uint8Array(byteNumbers)
          const blob = new Blob([byteArray], {
-            type: 'application/pdf'
+            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
          })
 
-         const fileURL = URL.createObjectURL(blob)
-         window.open(fileURL, '_blank')
+         const link = document.createElement('a')
+         link.href = URL.createObjectURL(blob)
+         link.download = `${data.certificate_name}.pdf`
+         document.body.appendChild(link)
+         link.click()
+         document.body.removeChild(link)
       } catch (e) {
-         console.error('Error creating and opening file:', e)
-         setError('Error opening file')
+         console.error('Error creating and downloading file:', e)
+         setError('Error downloading file')
       } finally {
          setTimeout(() => {
             setIsCertificateDownloading(false)
