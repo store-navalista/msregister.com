@@ -58,24 +58,49 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
          const byteNumbers = new Array(byteCharacters.length).fill(null).map((_, i) => byteCharacters.charCodeAt(i))
          const byteArray = new Uint8Array(byteNumbers)
          const blob = new Blob([byteArray], {
-            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+            type: 'application/pdf' // Указываем PDF, не .docx
          })
 
-         const link = document.createElement('a')
-         link.href = URL.createObjectURL(blob)
-         link.download = `${data.certificate_number || 'certificate'}.pdf`
-         document.body.appendChild(link)
-         link.click()
-         document.body.removeChild(link)
+         const fileURL = URL.createObjectURL(blob)
+         window.open(fileURL, '_blank') // Открыть в новой вкладке
       } catch (e) {
-         console.error('Error creating and downloading file:', e)
-         setError('Error downloading file')
+         console.error('Error creating and opening file:', e)
+         setError('Error opening file')
       } finally {
          setTimeout(() => {
             setIsCertificateDownloading(false)
          }, 2000)
       }
    }
+
+   // const downloadHandler = () => {
+   //    if (!data?.signed_file) return
+
+   //    setIsCertificateDownloading(true)
+
+   //    try {
+   //       const byteCharacters = atob(data.signed_file)
+   //       const byteNumbers = new Array(byteCharacters.length).fill(null).map((_, i) => byteCharacters.charCodeAt(i))
+   //       const byteArray = new Uint8Array(byteNumbers)
+   //       const blob = new Blob([byteArray], {
+   //          type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+   //       })
+
+   //       const link = document.createElement('a')
+   //       link.href = URL.createObjectURL(blob)
+   //       link.download = `${data.certificate_name}.pdf`
+   //       document.body.appendChild(link)
+   //       link.click()
+   //       document.body.removeChild(link)
+   //    } catch (e) {
+   //       console.error('Error creating and downloading file:', e)
+   //       setError('Error downloading file')
+   //    } finally {
+   //       setTimeout(() => {
+   //          setIsCertificateDownloading(false)
+   //       }, 2000)
+   //    }
+   // }
 
    if (!data) return
 
