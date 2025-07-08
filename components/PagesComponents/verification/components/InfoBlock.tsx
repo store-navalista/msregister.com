@@ -63,7 +63,7 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
 
          const link = document.createElement('a')
          link.href = URL.createObjectURL(blob)
-         link.download = `${data.certificate_number || 'certificate'}.docx`
+         link.download = `${data.certificate_number || 'certificate'}.pdf`
          document.body.appendChild(link)
          link.click()
          document.body.removeChild(link)
