@@ -13,6 +13,7 @@ type InfoBlockProps = {
 export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetchTrigger }) => {
    const [isCertificateDownloading, setIsCertificateDownloading] = React.useState(false)
    const [data, setData] = React.useState(null)
+   console.log(data)
 
    useEffect(() => {
       let cancelled = false
@@ -109,6 +110,10 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setLoading, fetch
             <div className={css.data_item}>
                <p>Issue Date</p>
                <p>{data.issue_date}</p>
+            </div>
+            <div className={css.data_item}>
+               <p>Valid To</p>
+               <p>{data.expiry_date}</p>
             </div>
          </div>
          {data?.signed_file && (
