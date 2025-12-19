@@ -1,0 +1,50 @@
+.header,
+.scrolled_header {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+}
+.header_wrapper {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #fff;
+    .scrolled_header {
+        padding: 12px 20px;
+    }
+    box-shadow: 0 0 4px #33333345;
+}
+.scrolled_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.04);
+    }
+}
+.right_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}

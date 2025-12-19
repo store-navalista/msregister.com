@@ -1,0 +1,55 @@
+.nav {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 12px;
+    transform: translateY(4px);
+    @media screen and (max-width: 780px) {
+        gap: 24px;
+    }
+    button {
+        display: flex;
+        background-color: #fff;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid #fff;
+        transition: border-color 0.3s ease, color 0.3s ease;
+        overflow: hidden;
+        &:hover {
+            color: var(--color-blue);
+        }
+        &[data-active="true"] {
+            color: var(--color-blue);
+        }
+    }
+    .logout {
+        color: var(--color-red);
+        transition: color 0.3s, background-color 0.3s;
+        &:hover {
+            color: #fff;
+            background-color: var(--color-blue);
+        }
+    }
+    .mobile_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 26px;
+        width: 36px;
+        transform: scale(1.1);
+        background-color: #164468;
+        cursor: default;
+        &:hover {
+            background-color: none;
+        }
+        & > div {
+            display: flex;
+            svg {
+                height: 18px;
+                aspect-ratio: 1;
+                fill: #fff;
+            }
+        }
+    }
+}

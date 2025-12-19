@@ -1,0 +1,46 @@
+.mdx {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 32px;
+    font-family: var(--font-g-medium);
+    line-height: 1.3;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 12px;
+        text-decoration: underline;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        gap: 12px;
+        list-style: disc;
+        padding-left: 24px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 16px;
+        line-height: 1.4;
+    }
+
+    strong {
+        font-family: var(--font-g-semibold);
+        text-decoration: underline;
+    }
+}

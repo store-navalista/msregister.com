@@ -1,0 +1,56 @@
+.wrapper,
+.layer_up,
+.layer_down,
+.layer_white {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    .svg {
+        width: 600px;
+        path {
+            will-change: stroke-dashoffset;
+        }
+        .step0 {
+            /* stroke: #003d63; */
+            /* fill: transparent; */
+            /* transition: stroke 0.5s, fill 0.5s; */
+        }
+
+        .step1 {
+            /* stroke: transparent; */
+            /* fill: var(--primary-blue-color); */
+            /* transition: stroke 0.5s, fill 0.5s; */
+        }
+
+        .step0 path {
+            stroke-dasharray: 1000;
+            /* stroke-dashoffset: 1000; */
+            /* animation: draw 1.5s linear forwards; */
+        }
+
+        /* @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        } */
+    }
+}
+
+.layer_down {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(223, 223, 223) 100%);
+}
+
+.layer_up {
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, var(--primary-blue-color) 100%);
+}
+.layer_white {
+    background-color: #fff;
+}

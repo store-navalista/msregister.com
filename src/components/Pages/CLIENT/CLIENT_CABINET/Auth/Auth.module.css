@@ -1,0 +1,187 @@
+.authDialog {
+    position: relative;
+    box-sizing: border-box;
+    padding: 64px 0 0;
+    border: none;
+    min-width: 450px;
+    background-color: transparent;
+    @media screen and (max-width: 1000px) {
+        padding: 128px 12px 0;
+    }
+    @media screen and (max-width: 768px) {
+        min-width: 0;
+        width: 100%;
+    }
+    .if_not_exist {
+        text-align: left;
+        margin: 12px 0 0 0;
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.3;
+    }
+    .btns {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-3px);
+        display: flex;
+        gap: 4px;
+        button,
+        span {
+            height: 26px;
+            aspect-ratio: 1;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            div {
+                display: flex;
+                position: static;
+            }
+            &:hover {
+                transform: none;
+                box-shadow: 0 0 4px rgb(0 0 0 / 0.2);
+            }
+        }
+    }
+    form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        --disabled-color: #878787;
+        position: relative;
+        background-color: var(--color-primary);
+        padding: 32px;
+        border-radius: 8px;
+        background-image: url(/images/svg/template-bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        span {
+            cursor: help;
+            .tooltip {
+                position: absolute;
+                background-color: #fff;
+                top: -52px;
+                padding: 4px 12px;
+                font-size: 14px;
+                border-radius: 4px;
+                border: 1px solid var(--color-primary);
+            }
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            top: 288px;
+        }
+        .icon,
+        .login_icon {
+            position: absolute;
+        }
+        .icon {
+            bottom: 6px;
+            left: 8px;
+            width: 18px;
+            aspect-ratio: 1;
+            fill: var(--color-blue);
+        }
+        .login_icon {
+            width: 24px;
+            aspect-ratio: 1;
+            fill: #fff;
+            left: 24px;
+            top: 28px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #fff;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+        .filed {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 24px;
+            label {
+                color: #fff;
+            }
+            input {
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                padding: 8px 12px 8px 32px;
+                outline-color: var(--color-primary);
+                &:focus-visible ~ .icon {
+                    transition: fill 0.3s;
+                    fill: var(--color-secondary);
+                }
+            }
+        }
+        button {
+            height: 40px;
+            font-size: 18px;
+            background-color: #fff;
+            transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                transform: translateY(-2px);
+            }
+            .loader {
+                display: block;
+                width: 20px;
+                aspect-ratio: 1;
+                background-image: url(/images/svg/loader.svg);
+            }
+        }
+    }
+    p.error {
+        color: red;
+        margin: 24px auto 0;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+        max-width: 400px;
+        line-height: 1.3;
+    }
+}
+
+.loading {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    animation: loading-blink 2s ease-in-out infinite;
+}
+
+html[data-theme="dark"] .authDialog form {
+    background-color: var(--color-bg-primary-dark);
+}
+
+@keyframes loading-blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}

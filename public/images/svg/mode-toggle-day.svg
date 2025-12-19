@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name=" Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130 130">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ffda00;
+      }
+
+      .cls-3 {
+        fill: #ffe400;
+      }
+
+      .cls-4 {
+        fill: #ffd100;
+      }
+
+      .cls-5 {
+        fill: #ffe500;
+      }
+
+      .cls-6 {
+        fill: #ffd400;
+      }
+
+      .cls-7 {
+        fill: #ffec00;
+      }
+
+      .cls-8 {
+        fill: #ffd500;
+      }
+
+      .cls-9 {
+        fill: #ffef00;
+      }
+
+      .cls-10 {
+        fill: gold;
+      }
+
+      .cls-11 {
+        fill: #ffdb00;
+      }
+
+      .cls-12 {
+        fill: #ffed00;
+      }
+
+      .cls-13 {
+        fill: #fff400;
+      }
+
+      .cls-14 {
+        fill: #ffdf00;
+      }
+
+      .cls-15 {
+        fill: none;
+      }
+
+      .cls-16 {
+        fill: #ffe300;
+      }
+
+      .cls-48 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-17 {
+        fill: #ffdc00;
+      }
+
+      .cls-18 {
+        fill: #ffd000;
+      }
+
+      .cls-19 {
+        fill: #fff200;
+      }
+
+      .cls-20 {
+        fill: #ffeb00;
+      }
+
+      .cls-21 {
+        fill: #ffe200;
+      }
+
+      .cls-22 {
+        fill: #ffc800;
+      }
+
+      .cls-23 {
+        fill: #ffca00;
+      }
+
+      .cls-24 {
+        fill: #fff300;
+      }
+
+      .cls-25 {
+        fill: #ffe700;
+      }
+
+      .cls-26 {
+        fill: #ffd200;
+      }
+
+      .cls-27 {
+        fill: #ffe100;
+      }
+
+      .cls-28 {
+        fill: #ffe000;
+      }
+
+      .cls-29 {
+        fill: #ffd900;
+      }
+
+      .cls-30 {
+        fill: #ffe900;
+      }
+
+      .cls-31 {
+        fill: #ffcf00;
+      }
+
+      .cls-32 {
+        fill: #ffea00;
+      }
+
+      .cls-33 {
+        fill: #ffe600;
+      }
+
+      .cls-49 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-34 {
+        fill: #ffc900;
+      }
+
+      .cls-35 {
+        fill: #ffe800;
+      }
+
+      .cls-36 {
+        fill: #ffcb00;
+      }
+
+      .cls-37 {
+        fill: #fe0;
+      }
+
+      .cls-38 {
+        fill: #ffce00;
+      }
+
+      .cls-39 {
+        fill: #ffd800;
+      }
+
+      .cls-40 {
+        fill: #fff500;
+      }
+
+      .cls-41 {
+        fill: #ffcd00;
+      }
+
+      .cls-42 {
+        fill: #fd0;
+      }
+
+      .cls-43 {
+        fill: #fc0;
+      }
+
+      .cls-44 {
+        fill: #fff100;
+      }
+
+      .cls-45 {
+        fill: #ffd300;
+      }
+
+      .cls-46 {
+        fill: #ffc700;
+      }
+
+      .cls-47 {
+        fill: #ffd600;
+      }
+    </style>
+    <filter id="drop-shadow-1">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#fff206" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath">
+      <circle class="cls-15" cx="65" cy="65" r="52"/>
+    </clipPath>
+  </defs>
+  <g class="cls-48">
+    <g class="cls-49">
+      <polygon class="cls-40" points="51.78 13 13 40.38 13 13 51.78 13"/>
+      <polygon class="cls-40" points="56.07 13 13 43.41 13 40.38 51.78 13 56.07 13"/>
+      <polygon class="cls-13" points="60.37 13 13 46.44 13 43.41 56.07 13 60.37 13"/>
+      <polygon class="cls-24" points="64.66 13 13 49.47 13 46.44 60.37 13 64.66 13"/>
+      <polygon class="cls-19" points="68.95 13 13 52.5 13 49.47 64.66 13 68.95 13"/>
+      <polygon class="cls-44" points="73.25 13 13 55.53 13 52.5 68.95 13 73.25 13"/>
+      <polygon class="cls-1" points="77.54 13 13 58.56 13 55.53 73.25 13 77.54 13"/>
+      <polygon class="cls-9" points="81.83 13 13 61.59 13 58.56 77.54 13 81.83 13"/>
+      <polygon class="cls-37" points="86.13 13 13 64.63 13 61.59 81.83 13 86.13 13"/>
+      <polygon class="cls-12" points="90.42 13 13 67.66 13 64.63 86.13 13 90.42 13"/>
+      <polygon class="cls-7" points="94.71 13 13 70.69 13 67.66 90.42 13 94.71 13"/>
+      <polygon class="cls-20" points="99.01 13 13 73.72 13 70.69 94.71 13 99.01 13"/>
+      <polygon class="cls-32" points="103.01 13 103.11 13.14 13 76.75 13 73.72 99.01 13 103.01 13"/>
+      <polygon class="cls-30" points="103.11 13.14 104.54 15.16 13 79.78 13 76.75 103.11 13.14"/>
+      <polygon class="cls-35" points="104.54 15.16 105.96 17.18 13 82.81 13 79.78 104.54 15.16"/>
+      <polygon class="cls-25" points="105.96 17.18 107.39 19.2 13 85.84 13 82.81 105.96 17.18"/>
+      <polygon class="cls-33" points="107.39 19.2 108.82 21.23 13 88.87 13 85.84 107.39 19.2"/>
+      <polygon class="cls-5" points="108.82 21.23 110.25 23.25 13 91.9 13 88.87 108.82 21.23"/>
+      <polygon class="cls-3" points="110.25 23.25 111.68 25.27 13 94.94 13 91.9 110.25 23.25"/>
+      <polygon class="cls-16" points="111.68 25.27 113.1 27.3 13.37 97.71 13 97.19 13 94.94 111.68 25.27"/>
+      <rect class="cls-21" x="2.91" y="62.27" width="122.09" height="2.48" transform="translate(-24.92 48.51) rotate(-35.22)"/>
+      <rect class="cls-27" x="4.33" y="64.3" width="122.09" height="2.48" transform="translate(-25.83 49.7) rotate(-35.22)"/>
+      <polygon class="cls-28" points="115.96 31.34 117 32.81 117 33.64 17.65 103.78 16.22 101.75 115.96 31.34"/>
+      <polygon class="cls-14" points="117 36.67 19.08 105.8 17.65 103.78 117 33.64 117 36.67"/>
+      <polygon class="cls-42" points="117 39.7 20.51 107.82 19.08 105.8 117 36.67 117 39.7"/>
+      <polygon class="cls-17" points="117 42.73 21.94 109.84 20.51 107.82 117 39.7 117 42.73"/>
+      <polygon class="cls-11" points="117 45.76 23.36 111.87 21.94 109.84 117 42.73 117 45.76"/>
+      <polygon class="cls-2" points="117 48.79 24.79 113.89 23.36 111.87 117 45.76 117 48.79"/>
+      <polygon class="cls-29" points="117 51.82 26.22 115.91 24.79 113.89 117 48.79 117 51.82"/>
+      <polygon class="cls-39" points="117 54.86 28.97 117 26.99 117 26.22 115.91 117 51.82 117 54.86"/>
+      <polygon class="cls-10" points="117 57.89 33.27 117 28.97 117 117 54.86 117 57.89"/>
+      <polygon class="cls-47" points="117 60.92 37.56 117 33.27 117 117 57.89 117 60.92"/>
+      <polygon class="cls-8" points="117 63.95 41.85 117 37.56 117 117 60.92 117 63.95"/>
+      <polygon class="cls-6" points="117 66.98 46.15 117 41.85 117 117 63.95 117 66.98"/>
+      <polygon class="cls-45" points="117 70.01 50.44 117 46.15 117 117 66.98 117 70.01"/>
+      <polygon class="cls-26" points="117 73.04 54.73 117 50.44 117 117 70.01 117 73.04"/>
+      <polygon class="cls-4" points="117 76.07 59.03 117 54.73 117 117 73.04 117 76.07"/>
+      <polygon class="cls-18" points="117 79.1 63.32 117 59.03 117 117 76.07 117 79.1"/>
+      <polygon class="cls-31" points="117 82.13 67.61 117 63.32 117 117 79.1 117 82.13"/>
+      <polygon class="cls-38" points="117 85.17 71.91 117 67.61 117 117 82.13 117 85.17"/>
+      <polygon class="cls-41" points="117 88.2 76.2 117 71.91 117 117 85.17 117 88.2"/>
+      <polygon class="cls-43" points="117 91.23 80.49 117 76.2 117 117 88.2 117 91.23"/>
+      <polygon class="cls-36" points="117 94.26 84.79 117 80.49 117 117 91.23 117 94.26"/>
+      <polygon class="cls-23" points="117 97.29 89.08 117 84.79 117 117 94.26 117 97.29"/>
+      <polygon class="cls-34" points="117 100.32 93.37 117 89.08 117 117 97.29 117 100.32"/>
+      <polygon class="cls-22" points="117 103.35 97.67 117 93.37 117 117 100.32 117 103.35"/>
+      <polygon class="cls-46" points="117 106.38 101.96 117 97.67 117 117 103.35 117 106.38"/>
+      <polygon class="cls-46" points="101.96 117 117 106.38 117 117 101.96 117"/>
+    </g>
+  </g>
+</svg>

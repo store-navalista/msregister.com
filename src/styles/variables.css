@@ -1,0 +1,35 @@
+:root {
+    --color-primary: #465577;
+    --color-secondary: #e8a453;
+    --color-green: #62ab60;
+    --color-blue: #12badc;
+    --color-red: #aa0f0f;
+    --color-standart: #000;
+    --color-bg-primary-dark: #282828;
+    --font-g-light: "Gantari-light", sans-serif;
+    --font-g-regular: "Gantari-regular", sans-serif;
+    --font-g-medium: "Gantari-medium", sans-serif;
+    --font-g-semibold: "Gantari-semibold", sans-serif;
+    --logo-height: 80px;
+    --header-padding: 16px;
+    --header-height: calc(var(--logo-height) + var(--header-padding));
+    --shadow-first: 0 0 6px 2px #d4d4d4a1;
+    --full-height: calc(100svh - var(--header-height));
+    --max-width-hf: 1200px;
+    --background-color: #fff;
+
+    --shadow-out: 0px 1px 4px rgba(174, 174, 192, 0.25), 2px 2px 3px rgba(174, 174, 192, 0.25);
+    --shadow-in: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+}
+
+[data-theme="dark"] {
+    --background-color: #383838;
+    --color-standart: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        --logo-height: 50px;
+        --header-padding: 20px;
+    }
+}

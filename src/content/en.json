@@ -1,0 +1,152 @@
+{
+    "GlobalMeta": {
+        "site": "Mediterranean Shipping Register"
+    },
+    "MenuItems": {
+        "CLASS": "Classification",
+        "APP_CERT": "Approval and Certification",
+        "COMP_AU": "Company and Ship Audits",
+        "SURV": "Surveys",
+        "TECH_SUP": "Technical Supervision",
+        "COMPANY": "Company",
+        "SERVICES": "Services",
+        "ABOUT": "About Us",
+        "CONTACTS": "Contacts",
+        "NEWS": "Newsroom",
+        "CLIENT": "Client Portal",
+        "INFO": "Useful Information",
+        "CLASS_SERV": "Classification Services",
+        "TRANSF": "Transfer of Class",
+        "TYPE_APPROVAL": "Type Approval",
+        "STATE_COMP": "Statement of Compliance",
+        "SERV_SUP": "Service Supplier",
+        "REM_AU": "Remote Audit",
+        "CONV_AU": "Conventional Audit",
+        "STAT_SURV": "Statutory Surveys",
+        "TOW_SURV": "Towage survey",
+        "OTHER_SURV": "Other surveys",
+        "AT_SHIP": "At Shipyard",
+        "IN_IND": "In Industry",
+        "OTHER_SERVICES": "Other Services",
+        "ADV_CONS": "Advisory & Consulting",
+        "CLIENT_VERIFY": "Verify Certificate",
+        "CLIENT_CABINET": "Cabinet"
+    },
+    "GlobalTitles": {
+        "contact_us": "Contact Us"
+    },
+    "Footer": {
+        "description": "We understand that choosing the right service is crucial. Mediterranean Shipping Register provides quality services and always values ​​its reputation.",
+        "trademark": "©2025",
+        "copyright": "Disclaimer: All trademarks, trade names, or logos belong to the respective companies and are used for information purpose only."
+    },
+    "Error": {
+        "description": "We've unfortunately encountered an error.You can try to <retry>reload the page</retry> you were visiting.",
+        "title": "Something went wrong!"
+    },
+    "CLIENT": {
+        "heading": "Client Portal",
+        "description": "Access tools and resources to support your interaction with our services.",
+        "verify_desc": "On this page you can verify the certificate:",
+        "verify_link": "Verify Certificate",
+        "cabinet_desc": "Here you can see all the information regarding your fleet:",
+        "cabinet_link": "Cabinet",
+        "req_p1": "Certificate verification",
+        "req_p2": "Unique Tracking Number (UTN)",
+        "req_p3": "E-Certificate Verification Portal",
+        "req_p4": "Verify certificate",
+        "Info_block": {
+            "verified": "Verified!",
+            "verified_desc": "This is a verified document",
+            "not_verified": "Expired",
+            "not_verified_desc": "This document is expired",
+            "vessel": "Vessel",
+            "imo_number": "IMO Number",
+            "certificate_number": "Certificate Number",
+            "certificate_name": "Certificate Name",
+            "certificate_status": "Certificate Status",
+            "issue_date": "Issue Date",
+            "view_cert": "View E-Certificate",
+            "expiry_date": "Valid To"
+        },
+        "Cabinet": {
+            "h1": "Marine Survey Register",
+            "description": "Client Portal",
+            "navigation": {
+                "basic": "Company's basic information",
+                "fleet": "Company's vessels"
+            },
+            "auth": {
+                "fogot_password": "If you have forgotten your password, please contact your agent.",
+                "sign_in": "Sign In",
+                "desc": "Here you can track your vessels, jobs and job status.",
+                "if_not_exist_acc": "*If you don't have an account yet, please contact your agent."
+            }
+        }
+    },
+    "Home": {
+        "h1": "Classification Services",
+        "description": "Ensuring Safety, Compliance and Efficiency in Maritime Operations",
+        "button": "Request a Survey",
+        "_why_choose_us": {
+            "title": "Why Choose Mediterranean Shipping Register?",
+            "desc": "Trust MSR for a seamless and professional maritime registration experience.",
+            "content": [
+                { "title": "International Accreditation", "desc": "Recognized by major maritime authorities, ensuring compliance with global standards and regulations." },
+                { "title": "Fast Turnaround Time", "desc": "Efficient registration and certification processes to minimize delays and keep your operations running smoothly." },
+                { "title": "Expert Technical Staff", "desc": "Highly qualified professionals providing reliable support and guidance for all your maritime needs." },
+                { "title": "Competitive Pricing", "desc": "Cost-effective solutions without compromising on quality or service excellence." }
+            ]
+        },
+        "_request_form": {
+            "h3": " Need a Classification Survey?",
+            "desc": "Contact our team for fast and reliable classification services.",
+            "placeholder": {
+                "name": "Name",
+                "email": "Email",
+                "company": "Company",
+                "phone": "Phone"
+            },
+            "button": "Send Request",
+            "after_fill": "Once you've downloaded and completed the form, you can submit it here. Our manager will process your request.",
+            "selects": ["Periodic Survey", "Initial Survey", "Renewal Survey", "Intermediate Survey"]
+        },
+        "_services_block": {
+            "h2": "About Classification Services",
+            "desc": "We ensure that every vessel meets the highest international standards of safety, structural integrity, and operational efficiency.",
+            "desc_list": ["Structural inspection of ship designs", "Certification to international safety standards", "Scheduled and unscheduled surveys"],
+            "services": [
+                { "ID": "IN_IND", "title": "Technical Supervision in Industry", "desc": "Our technical supervision services in industry ensure compliance with applicable standards, continuous oversight of critical processes, and independent verification of quality and safety." },
+                { "ID": "STAT_SURV", "title": "Surveys & Certification", "desc": "Regular surveys are essential for the safe and lawful operation of any vessel. We conduct periodic inspections in line with class and statutory requirements, ensuring continued compliance and readiness for sea." },
+                { "ID": "TYPE_APPROVAL", "title": "Structural Assessment", "desc": "We carry out detailed structural assessments to evaluate the vessel's condition, identify critical areas of concern, and provide recommendations for repair or reinforcement. These evaluations are key to extending service life and ensuring safety at sea." },
+                { "ID": "ADV_CONS", "title": "Risk-Based Inspection Plan", "desc": "Our Risk-Based Inspection plans are tailored to each vessel’s design, history, and operating profile. By focusing on critical systems and potential failure points, RBI allows for a more efficient, targeted inspection strategy." }
+            ]
+        }
+    },
+    "AboutUs": {
+        "meta": {
+            "description": "We are independent multiservice company dedicated to serve the global maritime industry.",
+            "title": "About Us"
+        },
+        "description": "",
+        "title": ""
+    },
+    "LocaleLayout": {
+        "title": "next-intl example"
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unknown}}"
+    },
+    "Manifest": {
+        "name": "next-intl example"
+    },
+    "Navigation": {
+        "home": "Home",
+        "pathnames": "Pathnames"
+    },
+    "NotFoundPage": {
+        "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+        "title": "Page not found"
+    }
+}

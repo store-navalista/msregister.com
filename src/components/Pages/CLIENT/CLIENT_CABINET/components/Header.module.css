@@ -1,0 +1,23 @@
+.header {
+    position: relative;
+    color: #fff;
+    padding: 48px 0 64px 0;
+    @media screen and (max-width: 1000px) {
+        padding: 96px 0 16px 0;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: fit-content;
+        padding: 0 28px;
+        margin: 0 auto;
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+}

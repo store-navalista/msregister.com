@@ -1,0 +1,16 @@
+@font-face {
+   font-family: 'Gantari-light';
+   src: url('fonts/Gantari-Light.woff2') format('woff2'), url('fonts/Gantari-Light.woff') format('woff');
+}
+@font-face {
+   font-family: 'Gantari-regular';
+   src: url('fonts/Gantari-Regular.woff2') format('woff2'), url('fonts/Gantari-Regular.woff') format('woff');
+}
+@font-face {
+   font-family: 'Gantari-medium';
+   src: url('fonts/Gantari-Medium.woff2') format('woff2'), url('fonts/Gantari-Medium.woff') format('woff');
+}
+@font-face {
+   font-family: 'Gantari-semibold';
+   src: url('fonts/Gantari-SemiBold.woff2') format('woff2'), url('fonts/Gantari-SemiBold.woff') format('woff');
+}

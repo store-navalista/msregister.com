@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 375 130">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_4);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #c7c7c7;
+      }
+
+      .cls-4 {
+        fill: url(#_Безымянный_градиент_5);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-7 {
+        opacity: .54;
+      }
+
+      .cls-5 {
+        fill: #e5e0cf;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-2" d="m65.12-.12h244.76c35.96,0,65.12,29.16,65.12,65.12h0c0,35.96-29.16,65.12-65.12,65.12H65.12C29.16,130.12,0,100.96,0,65H0C0,29.04,29.16-.12,65.12-.12Z"/>
+    </clipPath>
+    <linearGradient id="_Безымянный_градиент_5" data-name="Безымянный градиент 5" x1="-219.04" y1="262.93" x2="107.47" y2="402.85" gradientTransform="translate(262.01 389.75) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#041326"/>
+      <stop offset="1" stop-color="#0e314c"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_4" data-name="Безымянный градиент 4" x1="-236.01" y1="314.87" x2="-236.01" y2="112.87" gradientTransform="translate(262.01 389.75) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0c2f45"/>
+      <stop offset="1" stop-color="#151f25"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-6">
+    <g>
+      <path class="cls-4" d="m65-.12h245c35.9,0,65,29.1,65,65h0c0,35.9-29.1,65-65,65H65C29.1,129.88,0,100.78,0,64.88H0C0,28.98,29.1-.12,65-.12Z"/>
+      <g class="cls-7">
+        <path class="cls-5" d="m310,12.88c-3.3,0-6.54.31-9.67.9,24.1,4.53,42.33,25.68,42.33,51.1s-18.23,46.57-42.33,51.1c3.13.59,6.37.9,9.67.9,28.72,0,52-23.28,52-52s-23.28-52-52-52Z"/>
+      </g>
+      <ellipse class="cls-1" cx="26" cy="175.88" rx="136" ry="101"/>
+      <circle class="cls-3" cx="79.5" cy="27.38" r="1.5"/>
+      <circle class="cls-3" cx="146.5" cy="29.38" r="1.5"/>
+      <circle class="cls-3" cx="244.5" cy="107.38" r="1.5"/>
+      <circle class="cls-3" cx="232.5" cy="20.38" r="1.5"/>
+      <circle class="cls-3" cx="219.5" cy="48.38" r="1.5"/>
+      <circle class="cls-3" cx="174.5" cy="74.38" r="1.5"/>
+      <circle class="cls-3" cx="163.5" cy="109.38" r="1.5"/>
+      <circle class="cls-3" cx="87.5" cy="61.38" r="1.5"/>
+      <circle class="cls-3" cx="40.5" cy="42.38" r="1.5"/>
+    </g>
+  </g>
+</svg>

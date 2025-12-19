@@ -1,0 +1,51 @@
+.burger {
+    position: relative;
+    width: 36px;
+    aspect-ratio: 1;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .list {
+        position: fixed;
+        overflow: auto;
+        left: 0;
+        overflow: auto;
+        top: 64px;
+        height: calc(100svh - 58px);
+        width: 100vw;
+        background-color: #ffffffb0;
+        backdrop-filter: blur(10px);
+        :where(.first_block, .second_block, .third_block) {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 24px 0;
+            border-bottom: 1px solid #23466782;
+            li {
+                font-size: 16px;
+                color: #333;
+            }
+            p {
+                position: relative;
+                font-size: 16px;
+                color: var(--color-primary);
+                text-decoration: underline;
+                font-family: var(--font-g-semibold);
+                margin-bottom: 4px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: #333;
+                    left: 50%;
+                    top: 28px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}

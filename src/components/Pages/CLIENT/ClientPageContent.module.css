@@ -1,0 +1,12 @@
+.client_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .link {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+    }
+}

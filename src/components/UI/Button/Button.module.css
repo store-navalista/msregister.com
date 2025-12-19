@@ -1,0 +1,34 @@
+.button {
+    position: relative;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    background-color: #000;
+    button,
+    a {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+        padding: 12px 24px;
+        transition: translate 0.2s ease-in-out;
+        text-wrap: nowrap;
+    }
+    &:hover button,
+    &:hover a {
+        translate: -3px -3px;
+    }
+    button:disabled {
+        cursor: default;
+        &:hover {
+            translate: none;
+        }
+    }
+}
+.loader {
+    display: flex;
+    width: 22px;
+    aspect-ratio: 1;
+}

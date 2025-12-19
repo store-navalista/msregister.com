@@ -1,25 +1,28 @@
 {
-   "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-         "@/src/*": ["src/*"],
-         "@/components/*": ["components/*"],
-         "@/store/*": ["store/*"],
-         "@/img/*": ["assets/images/*"]
-      },
-      "lib": ["dom", "dom.iterable", "esnext"],
-      "allowJs": true,
-      "skipLibCheck": true,
-      "strict": false,
-      "noEmit": true,
-      "incremental": true,
-      "esModuleInterop": true,
-      "module": "esnext",
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      "jsx": "preserve"
-   },
-   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-   "exclude": ["node_modules"]
+    "compilerOptions": {
+        "allowArbitraryExtensions": true,
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "strict": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Pages/CLIENT/CLIENT_CABINET/components/Effects/FlyCircles/start.js", ".next/dev/types/**/*.ts"],
+    "exclude": ["node_modules"]
 }

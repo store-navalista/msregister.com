@@ -1,0 +1,180 @@
+.tabs_wrapper {
+    overflow: auto;
+    padding-bottom: 48px;
+    .tabs {
+        --border-color: #cbcbcb;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border-radius: 8px;
+        max-width: 1400px;
+        min-width: 1400px;
+        border: 1px solid var(--color-primary);
+        margin-top: 24px;
+        backdrop-filter: blur(8px);
+        box-sizing: border-box;
+        line-height: 1.3;
+        overflow: hidden;
+        @media screen and (max-width: 1280px) {
+            width: auto;
+            margin: 24px 24px 0;
+            color: #0c694a;
+        }
+        .table_wrapper {
+            h3 {
+                padding: 24px 0 4px 12px;
+                text-align: left;
+                font-size: 20px;
+                border-bottom: 1px solid #8b8b8b;
+                font-family: var(--font-g-medium);
+            }
+            .status_cell {
+                padding: 8px 12px;
+                border-radius: 24px;
+                text-wrap: nowrap;
+            }
+        }
+        .basic {
+            display: flex;
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 24px;
+                .row {
+                    display: flex;
+                    gap: 8px;
+                    .icon {
+                        width: 16px;
+                        aspect-ratio: 1;
+                        fill: var(--color-blue);
+                    }
+                    p {
+                        &:first-child {
+                            font-family: var(--font-g-medium);
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+        .tables_loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+        }
+        p.head {
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            background: linear-gradient(90deg, rgba(22, 68, 104, 1) 0%, rgba(81, 141, 125, 1) 100%);
+            color: #fff;
+        }
+        .table {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .mui_table {
+                padding: 24px;
+            }
+            .header {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr) 70px;
+                border-bottom: 1px solid var(--border-color);
+                p {
+                    font-family: var(--font-g-medium);
+                    color: var(--color-primary);
+                }
+                p {
+                    text-align: center;
+                    padding: 12px;
+                    &:not(:last-child) {
+                        border-right: 1px solid var(--border-color);
+                    }
+                }
+                div {
+                    &:not(:last-child) {
+                        border-right: 1px solid var(--border-color);
+                    }
+                }
+            }
+            .body {
+                .table {
+                    h3 {
+                        text-align: left;
+                        padding: 12px 0 4px 24px;
+                        border-bottom: 1px solid #6e6e6e;
+                    }
+                }
+                .row {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr) 70px;
+                    p {
+                        text-align: center;
+                        padding: 12px;
+                        &:not(:last-child) {
+                            border-right: 1px solid var(--border-color);
+                        }
+                    }
+                    border-top: 1px solid var(--border-color);
+                    border-bottom: 1px solid var(--border-color);
+                    div {
+                        &:not(:last-child) {
+                            border-right: 1px solid var(--border-color);
+                        }
+                    }
+                    .info_block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        button {
+                            background-color: #fff;
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 4px;
+                        }
+                    }
+                    .buttons {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & > div {
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 8px;
+                            .button {
+                                border-radius: 4px;
+                                padding: 6px 12px;
+                                font-size: 14px;
+                                color: var(--color-blue);
+                                background-color: #fff;
+                                transition: background-color 0.3s, color 0.3s;
+                                &:hover {
+                                    color: #fff;
+                                    background-color: var(--color-blue);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] .tabs {
+    background-color: #fff;
+}

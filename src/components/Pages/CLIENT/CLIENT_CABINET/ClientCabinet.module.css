@@ -1,0 +1,18 @@
+.cabinet {
+    overflow: hidden;
+    .company {
+        margin: 0 auto;
+        width: fit-content;
+        font-size: 20px;
+        padding: 8px;
+        margin-top: 32px;
+        text-decoration: underline;
+        color: var(--color-standart);
+    }
+}
+.loader {
+    margin: 0 auto;
+    width: 32px;
+    aspect-ratio: 1;
+    margin: 120px auto 60;
+}
