@@ -9,6 +9,12 @@ type Props = {
     children: ReactNode;
 };
 
+export const metadata = {
+    verification: {
+        google: "j7lLEj4EPac393EnXoTVEdgrNrKH7bpIy8CWkFjuZcA",
+    },
+};
+
 export default async function LocaleLayout({ children }: Props) {
     const cookieStore = await cookies();
     const theme = cookieStore.get("theme")?.value || "light";

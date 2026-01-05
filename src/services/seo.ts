@@ -7,7 +7,7 @@ type MetaDataType = {
 };
 
 const BASE_URL = "https://msregister.com";
-export const GOOGLE_BUSINESS_URL = "https://www.google.com/maps?cid=12801926833004466332";
+export const GOOGLE_BUSINESS_URL = "https://maps.google.com/?cid=12801926833004466332";
 
 export async function generatePageMetadata({ namespace, path = "" }: MetaDataType) {
     const url = `${BASE_URL}/${path ? `/${path}` : ""}`;
