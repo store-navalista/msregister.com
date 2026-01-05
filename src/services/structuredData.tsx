@@ -6,7 +6,7 @@ export const StructuredData = () => (
         dangerouslySetInnerHTML={{
             __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "LocalBusiness",
+                "@type": "Organization",
                 name: "Mediterranean Shipping Register",
                 url: "https://msregister.com",
                 image: "https://msregister.com/images/logo.png",
@@ -15,9 +15,15 @@ export const StructuredData = () => (
                     "@type": "PostalAddress",
                     streetAddress: "Unit 3, Office A, 1st Floor, 6-7 St. Mary At Hill, London, EC3R 8EE",
                     addressLocality: "London",
-                    addressCountry: "UK",
+                    addressCountry: "GB",
+                    addressRegion: "England",
+                    postalCode: "EC3R 8EE",
                 },
-                telephone: "+44 73 0810 0885",
+                contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+447308100885",
+                    contactType: "customer service",
+                },
                 sameAs: [GOOGLE_BUSINESS_URL],
             }),
         }}

@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@/components/GoogleAnalytics/GoogleAnalytics";
 import { PageLayout } from "@/components/PageLayout/PageLayout";
 import { StructuredData } from "@/services/structuredData";
 import "@/styles/globals.css";
@@ -15,6 +16,7 @@ export default async function LocaleLayout({ children }: Props) {
     return (
         <html lang="en" data-theme={theme}>
             <body>
+                <GoogleAnalytics />
                 <StructuredData />
                 <PageLayout>{children}</PageLayout>
             </body>
