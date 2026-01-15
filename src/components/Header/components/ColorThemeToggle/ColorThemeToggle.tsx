@@ -30,12 +30,12 @@ export const ColorThemeToggle: FC<{ theme: ThemeType; setTheme: Dispatch<SetStat
             controlsNight.start({ opacity: 1, transition: { duration: 0.5 } });
 
             controlsCircleDay.start({
-                x: 52,
+                x: 57,
                 opacity: 0,
                 transition: { duration: 0.4 },
             });
             controlsCircleNight.start({
-                x: 52,
+                x: 57,
                 opacity: 1,
                 transition: { duration: 0.4 },
             });
@@ -70,7 +70,7 @@ export const ColorThemeToggle: FC<{ theme: ThemeType; setTheme: Dispatch<SetStat
             <motion.div className={css.menu_toggle_bg} animate={controlsNight} initial={{ opacity: theme === "dark" ? 1 : 0 }}>
                 <Image src={"/images/svg/mode-toggle-night-bg.svg"} alt="night background" fill />
             </motion.div>
-            <motion.div className={clsx(css.circle, css.day)} animate={controlsCircleDay} initial={{ x: theme === "dark" ? 52 : 1, opacity: theme === "dark" ? 0 : 1 }}>
+            <motion.div className={clsx(css.circle, css.day)} animate={controlsCircleDay} initial={{ x: theme === "dark" ? 57 : 1, opacity: theme === "dark" ? 0 : 1 }}>
                 <Image src="/images/svg/mode-toggle-day.svg" alt="day icon" fill />
             </motion.div>
             <motion.div className={clsx(css.circle, css.night)} animate={controlsCircleNight} initial={{ x: theme === "dark" ? 52 : 1, opacity: theme === "dark" ? 1 : 0 }}>

@@ -19,15 +19,11 @@ export const Header = () => {
     const isScrolled = useScrollStep() > cnt;
     const { ref, animation } = useAnimateOnView("none", 0, 0, 0.2);
 
-    // const contactHandler = () => {
-    //     console.log("Contact Us button clicked");
-    // };
-
     return (
         <div>
             {!isMatchMedia && (
                 <header className={css.header} style={{ opacity: isScrolled ? 0 : 1 }}>
-                    <Logo isScrolled={isMatchMedia} />
+                    <Logo isScrolled={isMatchMedia} theme={theme} />
                     <Navigation />
                     <div className={css.right_block}>
                         <ColorThemeToggle {...{ theme, setTheme }} />
@@ -40,7 +36,7 @@ export const Header = () => {
             {(isScrolled || isMatchMedia) && (
                 <motion.div ref={ref} className={css.header_wrapper} {...animation}>
                     <header className={css.scrolled_header}>
-                        <Logo isScrolled={isScrolled || isMatchMedia} />
+                        <Logo isScrolled={isScrolled || isMatchMedia} theme={theme} />
                         {isMatchMedia ? (
                             <div className={css.right_block}>
                                 <ColorThemeToggle {...{ theme, setTheme }} />

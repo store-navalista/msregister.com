@@ -27,7 +27,7 @@ export const InfoBlock: FC<InfoBlockProps> = ({ utn, setError, setisLoading }) =
             const byteNumbers = new Array(byteCharacters.length).fill(null).map((_, i) => byteCharacters.charCodeAt(i));
             const byteArray = new Uint8Array(byteNumbers);
             const blob = new Blob([byteArray], {
-                type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                type: "application/pdf",
             });
 
             const link = document.createElement("a");
