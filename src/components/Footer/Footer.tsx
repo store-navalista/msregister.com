@@ -64,6 +64,7 @@ const FirstBlock = () => {
 };
 
 const Footer: FC = () => {
+    const year = new Date().getFullYear();
     const company = [...MENU.COMPANY, ...MENU.NEWS, "CLIENT"];
     const [serv_left, serv_right] = [MENU.SERVICES.slice(0, 3), MENU.SERVICES.slice(3)];
 
@@ -107,7 +108,10 @@ const Footer: FC = () => {
                 <div id="footer" className={css.trademark}>
                     <div>
                         <p>{Content.Footer.copyright}</p>
-                        <p>{Content.Footer.trademark}</p>
+                        <p>
+                            {Content.Footer.trademark}
+                            {year}
+                        </p>
                     </div>
                     {/* <CustomLink href="/privacy-policy" text="cookie-notive-privacy" /> */}
                 </div>
