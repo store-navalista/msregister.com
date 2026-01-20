@@ -25,17 +25,17 @@ export const ColorThemeToggle: FC<{ theme: ThemeType; setTheme: Dispatch<SetStat
     }, []);
 
     useEffect(() => {
-        if (theme === "light") {
+        if (theme === "dark") {
             controlsDay.start({ opacity: 0, transition: { duration: 0.5 } });
             controlsNight.start({ opacity: 1, transition: { duration: 0.5 } });
 
             controlsCircleDay.start({
-                x: 57,
+                x: 20,
                 opacity: 0,
                 transition: { duration: 0.4 },
             });
             controlsCircleNight.start({
-                x: 57,
+                x: 20,
                 opacity: 1,
                 transition: { duration: 0.4 },
             });
@@ -44,7 +44,7 @@ export const ColorThemeToggle: FC<{ theme: ThemeType; setTheme: Dispatch<SetStat
             controlsNight.start({ opacity: 0, transition: { duration: 0.5 } });
 
             controlsCircleDay.start({
-                x: 1,
+                x: -5,
                 opacity: 1,
                 transition: { duration: 0.4 },
             });
@@ -62,18 +62,24 @@ export const ColorThemeToggle: FC<{ theme: ThemeType; setTheme: Dispatch<SetStat
         setTheme(theme === "light" ? "dark" : "light");
     };
 
+    const initialDay = {
+        x: theme === "dark" ? 20 : -5,
+        opacity: theme === "dark" ? 0 : 1,
+        backgroundColor: "#fff",
+    };
+
+    const initialNight = {
+        x: theme === "dark" ? 20 : 1,
+        opacity: theme === "dark" ? 1 : 0,
+        backgroundColor: "#465577",
+    };
+
     return (
         <div className={css.wrapper} onClick={onClick}>
-            <motion.div className={css.menu_toggle_bg} animate={controlsDay} initial={{ opacity: theme === "light" ? 0 : 1 }}>
-                <Image src={"/images/svg/mode-toggle-day-bg.svg"} alt="day background" fill />
-            </motion.div>
-            <motion.div className={css.menu_toggle_bg} animate={controlsNight} initial={{ opacity: theme === "light" ? 1 : 0 }}>
-                <Image src={"/images/svg/mode-toggle-night-bg.svg"} alt="night background" fill />
-            </motion.div>
-            <motion.div className={clsx(css.circle, css.day)} animate={controlsCircleDay} initial={{ x: theme === "light" ? 57 : 1, opacity: theme === "light" ? 0 : 1 }}>
+            <motion.div className={clsx(css.circle, css.day)} animate={controlsCircleDay} initial={initialDay}>
                 <Image src="/images/svg/mode-toggle-day.svg" alt="day icon" fill />
             </motion.div>
-            <motion.div className={clsx(css.circle, css.night)} animate={controlsCircleNight} initial={{ x: theme === "light" ? 57 : 1, opacity: theme === "light" ? 1 : 0 }}>
+            <motion.div className={clsx(css.circle, css.night)} animate={controlsCircleNight} initial={initialNight}>
                 <Image src="/images/svg/mode-toggle-night.svg" alt="night icon" fill />
             </motion.div>
         </div>
